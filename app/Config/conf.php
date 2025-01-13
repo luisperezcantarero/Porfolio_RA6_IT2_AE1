@@ -1,0 +1,9 @@
+<?php
+define("DBHOST","localhost");
+define("DBUSER","luis");
+define("DBPASS","HTSFXV");
+define("DBNAME","porfolio");
+define("DBPORT","3306");
+define("DIRBASEURL","");
+define("DIRPUBLIC","");
+?>
