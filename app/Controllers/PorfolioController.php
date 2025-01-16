@@ -74,7 +74,7 @@ class PorfolioController extends BaseController {
                     $trabajo->set($datos);
                     break;
             }
-            header('Location: /porfolio');
+            header('Location: /');
         }
 
         switch ($tipo) {
@@ -103,7 +103,7 @@ class PorfolioController extends BaseController {
                 ];
                 break;
         }
-        $this->renderHTML("../app/Views/annadir.php", $data);
+        $this->renderHTML("../app/Views/agregar.php", $data);
     }
 
     public function delAction($request) {
@@ -125,7 +125,7 @@ class PorfolioController extends BaseController {
                 Trabajos::getInstancia()->delete($id);
                 break;
         }
-        header('Location: /porfolio');
+        header('Location: /');
     }
 
     public function editAction($request) {
@@ -172,7 +172,7 @@ class PorfolioController extends BaseController {
                     $trabajo->edit($id, $datos);
                     break;
             }
-            header('Location: /porfolio');
+            header('Location: /');
         }
 
         switch ($tipo) {
